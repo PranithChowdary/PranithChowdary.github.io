@@ -1,17 +1,49 @@
 ---
-
+const name = "Pranith Chowdary";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{name}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-N3T2UiNKUgjK4Cj4Kz+2Zq1U2gL75Q+5G5I7lJ5E9D5v7G5j1u5u5m5s5c5k5e5" crossorigin="anonymous">
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 font-sans">
+
+    <main class="max-w-4xl mx-auto p-8">
+
+      <h1 class="text-4xl font-bold mb-4">
+        {name}
+      </h1>
+
+      <p class="text-lg text-gray-600 mb-6">
+        AI Researcher | Deep Learning | LLMs
+      </p>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-2">
+          Research
+        </h2>
+
+        <p class="text-gray-700">
+          Working on Transformers, Reinforcement Learning, and LLM alignment.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-2">
+          Equation Example
+        </h2>
+
+        <p>
+          $$
+          E = mc^2
+          $$
+        </p>
+      </section>
+
+    </main>
+
+  </body>
 </html>
