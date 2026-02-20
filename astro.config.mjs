@@ -1,16 +1,18 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
+
 
 import remarkMath from 'remark-math';
 import rehypeMathjax from 'rehype-mathjax';
 import rehypeKatex from 'rehype-katex';
 
+
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()]
-  },
+  site: 'https://pranithchowdary.github.io',
+  base: './',
+  integrations: [tailwind()],
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeMathjax, rehypeKatex],
