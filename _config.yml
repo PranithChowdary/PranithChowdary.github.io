@@ -1,0 +1,7 @@
+title: Pranith Chowdary
+description: AI Researcher
+baseurl: ""
+url: "https://pranithchowdary.github.io"
+
+plugins:
+  - jekyll-feed
