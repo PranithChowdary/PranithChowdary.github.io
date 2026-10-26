@@ -2,53 +2,387 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pranith Chowdary</title>
-
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- MathJax -->
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$']]
-  }
-};
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranith Chowdary</title>
+  <meta name="description"
+    content="Pranith Chowdary Karumanchi — Research Engineer at IIT Bombay working on algorithmic recourse, discrete diffusion models and statistical inference." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- ── Nav ─────────────────────────────────────────────── -->
+  <nav>
+    <a href="#hero" class="nav-logo">PC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#research">research</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="teaching.html">teaching</a></li>
+      <li><a href="#cv">cv</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </svg>
+    </button>
+  </nav>
 
-<div class="container">
+  <main>
 
-    <h1 class="text-5xl font-bold text-blue-600">
-        Pranith Chowdary
-    </h1>
+    <!-- ── Hero ────────────────────────────────────────────── -->
+    <section id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-inner">
+        <div class="hero-tag">researcher · engineer · builder</div>
+        <h1 class="hero-name">Pranith Chowdary<br><em>Karumanchi</em></h1>
+        <p class="hero-title">Research Engineer · IIT Bombay</p>
+        <p class="hero-bio">
+          I work on algorithmic recourse — helping people understand what they can change to
+          obtain a different outcome from a machine-learning model — as well as on discrete
+          diffusion models and statistical inference.
+        </p>
+        <div class="hero-links">
+          <a href="https://drive.google.com/file/d/1YEAIUsylHHFJ8xvZbnFSFJoQpJNY3v0o/view?usp=sharing"
+            class="btn btn-primary" target="_blank" rel="noopener">↓ curriculum vitae</a>
+          <a href="mailto:pranith@minds.iitb.ac.in" class="btn btn-outline">get in touch</a>
+          <a href="https://github.com/PranithChowdary" class="btn btn-outline" target="_blank">github</a>
+        </div>
+      </div>
+    </section>
 
-<p>AI Researcher | LLM Engineer | Data Scientist</p>
+    <!-- ── Divider ──────────────────────────────────────────── -->
+    <div class="section-divider" data-divider></div>
 
-<h2>Research Interests</h2>
+    <!-- ── About ───────────────────────────────────────────── -->
+    <section id="about">
+      <div class="section-header">
+        <span class="section-num">01 /</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a Research Engineer at the Indian Institute of Technology Bombay (IIT Bombay),
+            working with Dr. Sunita Sarawagi on algorithmic recourse, discrete diffusion models
+            and statistical inference.
+          </p>
+          <p>
+            Previously, I worked as a Data Scientist at Turing with Microsoft as the client,
+            on post-training techniques (SFT/RLHF) for large language models.
+          </p>
+          <p>
+            Earlier, I was a teaching assistant at Vignan's Foundation for Science, Technology
+            &amp; Research (VFSTR), supporting eight undergraduate courses in algorithms, data
+            structures, machine learning and reinforcement learning between 2022 and 2024.
+          </p>
+          <div class="interests-list">
+            <span class="tag">algorithmic recourse</span>
+            <span class="tag">discrete diffusion</span>
+            <span class="tag">statistical inference</span>
+            <span class="tag">post-training</span>
+            <span class="tag">SFT</span>
+            <span class="tag">RLHF</span>
+            <span class="tag">machine learning</span>
+          </div>
+        </div>
+        <div class="about-sidebar">
+          <div class="info-row">
+            <span class="info-label">position</span>
+            <span class="info-val">Research Engineer</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">institute</span>
+            <span class="info-val">IIT Bombay</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">advisor</span>
+            <span class="info-val">Dr. Sunita Sarawagi</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">email</span>
+            <span class="info-val"><a href="mailto:pranith@minds.iitb.ac.in">pranith@minds.iitb.ac.in</a></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">location</span>
+            <span class="info-val">Mumbai, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<ul>
-<li>Large Language Models</li>
-<li>Transformers</li>
-<li>Reinforcement Learning</li>
-</ul>
+    <div class="section-divider" data-divider></div>
 
-<h2>Equation Example</h2>
+    <!-- ── Research ─────────────────────────────────────────── -->
+    <section id="research">
+      <div class="section-header">
+        <span class="section-num">02 /</span>
+        <h2 class="section-title">Research</h2>
+      </div>
+      <div class="research-grid">
 
-$$
-E = mc^2
-$$
+        <div class="r-card">
+          <div class="r-card-tag">trustworthy ML</div>
+          <div class="r-card-title">Algorithmic Recourse</div>
+          <div class="r-card-desc">
+            When a model makes an unfavourable decision about a person, recourse asks what
+            that person could realistically change to get a better outcome — and how to make
+            such recommendations actionable, reliable and fair.
+          </div>
+        </div>
 
-</div>
+        <div class="r-card">
+          <div class="r-card-tag">language models</div>
+          <div class="r-card-title">Post-Training Techniques</div>
+          <div class="r-card-desc">
+            Adapting pretrained language models after pretraining — through supervised
+            fine-tuning (SFT) on curated demonstrations and reinforcement learning from human
+            feedback (RLHF) — to make them more useful and better aligned.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider" data-divider></div>
+
+    <!-- ── Experience ───────────────────────────────────────── -->
+    <section id="experience">
+      <div class="section-header">
+        <span class="section-num">03 /</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <ul class="exp-list">
+        <li class="exp-item">
+          <div class="exp-when">Jan 2026 – present</div>
+          <div>
+            <div class="exp-role">Research Engineer</div>
+            <div class="exp-org">C-MInDS, IIT Bombay · Mumbai, India</div>
+            <ul class="exp-points">
+              <li>Working with Dr. Sunita Sarawagi on algorithmic recourse, discrete diffusion models and statistical inference.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="exp-item">
+          <div class="exp-when">Oct 2024 – Dec 2025</div>
+          <div>
+            <div class="exp-role">Data Scientist</div>
+            <div class="exp-org">Turing · Remote (India), HQ San Francisco, CA</div>
+            <ul class="exp-points">
+              <li>Fine-tuned Microsoft-scale LLMs using RLHF and SFT on 100M+ token datasets, boosting user relevance by 45%.</li>
+              <li>Developed optimized Transformer architectures (e.g. Flash Attention, Mixture-of-Experts), improving benchmark scores by 70% on internal evals.</li>
+              <li>Led full-stack deployment of LLMs in 3+ products using Docker and Vertex AI, reducing latency by 35%.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="exp-item">
+          <div class="exp-when">Jul 2024 – Sep 2024</div>
+          <div>
+            <div class="exp-role">Research Engineer</div>
+            <div class="exp-org">Stealth Startup · Remote (India), London, UK</div>
+            <ul class="exp-points">
+              <li>Built custom instruction-tuned LLMs with LoRA-based adapters, reducing model size by 60% without accuracy loss.</li>
+              <li>Implemented distributed training and data streaming with PyTorch + Ray, achieving 3x training speed.</li>
+              <li>Designed scalable pipelines to process 10M+ samples/day with data validation, logging and checkpointing.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="exp-item">
+          <div class="exp-when">Jan 2024 – May 2024<span>full-time</span>Aug 2022 – May 2023<span>part-time</span></div>
+          <div>
+            <div class="exp-role">Research and Teaching Assistant</div>
+            <div class="exp-org">Vignan University (VFSTR) · Andhra Pradesh, India</div>
+            <ul class="exp-points">
+              <li>Delivered live courses in ML, DL and RL to 80+ students with project-based assessments and interactive labs.</li>
+              <li>Mentored 30+ AI projects, leading to 5+ hackathon wins and a 40% improvement in course outcomes.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="section-divider" data-divider></div>
+
+    <!-- ── Education ────────────────────────────────────────── -->
+    <section id="education">
+      <div class="section-header">
+        <span class="section-num">04 /</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <ul class="exp-list">
+        <li class="exp-item">
+          <div class="exp-when">Aug 2025 – May 2027<span>expected</span></div>
+          <div>
+            <div class="exp-role">M.Sc. in Data Science</div>
+            <div class="exp-org">VIT Vellore · Vellore, India</div>
+          </div>
+        </li>
+        <li class="exp-item">
+          <div class="exp-when">Aug 2019 – May 2023</div>
+          <div>
+            <div class="exp-role">B.Tech in Computer Science and Engineering</div>
+            <div class="exp-org">Vignan University (VFSTR) · Andhra Pradesh, India</div>
+            <ul class="exp-points">
+              <li>GPA: 3.3 (82.4/100)</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="section-divider" data-divider></div>
+
+    <!-- ── Teaching ─────────────────────────────────────────── -->
+    <section id="teaching">
+      <div class="section-header">
+        <span class="section-num">05 /</span>
+        <h2 class="section-title">Teaching</h2>
+      </div>
+      <table class="teach-table teach-summary">
+        <thead>
+          <tr>
+            <th>course</th>
+            <th>term</th>
+            <th>role</th>
+            <th>institution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Machine Learning [22AM204]</td>
+            <td>Spring 2023, Spring 2024</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Advanced Coding Competency [22TP203]</td>
+            <td>Fall 2022 – Spring 2024</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Reinforcement Learning [22AM305]</td>
+            <td>Spring 2024</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Intelligent Application Development [22AM960]</td>
+            <td>Spring 2024</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Design and Analysis of Algorithms [22AM203]</td>
+            <td>Spring 2023</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Machine Learning, Dept Elective [22CS808]</td>
+            <td>Spring 2023</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Design and Analysis of Algorithms [22CS206]</td>
+            <td>Fall 2022</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+          <tr>
+            <td>Data Structures [22TP201]</td>
+            <td>Fall 2022</td>
+            <td><span class="teach-role">TA</span></td>
+            <td>VFSTR</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 1.5rem;">
+        <a href="teaching.html" class="btn btn-outline">full teaching history →</a>
+      </div>
+    </section>
+
+    <div class="section-divider" data-divider></div>
+
+    <!-- ── CV ───────────────────────────────────────────────── -->
+    <section id="cv">
+      <div class="section-header">
+        <span class="section-num">06 /</span>
+        <h2 class="section-title">Curriculum Vitae</h2>
+      </div>
+      <div class="cv-block">
+        <div class="cv-text">
+          <h3>Full CV available as PDF</h3>
+          <p>Experience, education, projects and publications</p>
+        </div>
+        <a href="https://drive.google.com/file/d/1YEAIUsylHHFJ8xvZbnFSFJoQpJNY3v0o/view?usp=sharing"
+          class="btn btn-primary" target="_blank" rel="noopener">&rArr; view cv</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Pranith Chowdary · IIT Bombay · Mumbai</span>
+    <span>built with vanilla HTML/CSS/JS · hosted on <a
+        href="https://github.com/PranithChowdary/PranithChowdary.github.io" target="_blank">github pages</a></span>
+  </footer>
+
+  <!-- ── Theme Script (Separated to bypass local CORS restrictions) ── -->
+  <script>
+    // Theme logic initialized immediately
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark) document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    // onclick toggle function
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
+  </script>
+
+  <!-- ── Scripts ──────────────────────────────────────────── -->
+  <script type="module">
+    import { mount as mountDots } from './dot-drift.js';
+    import { mountAll as mountDividers } from './svg-divider.js';
+
+    // Hero dot-drift animation
+    const canvas = document.getElementById('hero-canvas');
+    if (canvas) {
+      const resize = () => {
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+      };
+      resize();
+      window.addEventListener('resize', resize);
+      mountDots(canvas);
+    }
+
+    // Animated SVG dividers
+    mountDividers();
+  </script>
 
 </body>
 
